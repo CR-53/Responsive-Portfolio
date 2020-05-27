@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color:white;
+    box-shadow: 0 5px 10px #efefef;
+}
+
+.bg-dark {
+    background-color:white !important;
+}
+
+.navbar-nav a {
+    color: black !important;
+}
+
+.logo {
+    height: 60px;
+}
