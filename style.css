@@ -3,19 +3,118 @@
     padding: 0;
 }
 
-.navbar {
-    background-color:white;
-    box-shadow: 0 5px 10px #efefef;
+body {
+    background-color: #e6e6e6;
 }
 
-.bg-dark {
-    background-color:white !important;
+.navbar {
+    background-color:#34495e !important; /* Changes the background colour of the navbar to match the logo colour. Use of important override bootstrap CSS*/
+    box-shadow: 0 5px 10px #f1c40f29;
+    height: 90px;
 }
 
 .navbar-nav a {
-    color: black !important;
+    color: #f1c40f !important; /* Changes the colour of the nav links to match the logo colour. Use of important override bootstrap CSS*/
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a:hover{
+    color: darkorange !important;
 }
 
 .logo {
+    margin-left: 2%;
     height: 60px;
+}
+
+.card {
+    width: 92%;
+    padding: 25px;
+    margin: 4%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: black;
+    float: left;
+}
+
+.card-title {
+    margin-bottom: 12px;
+}
+
+.card-img-top { 
+    max-height: 315px;
+    max-width: 350px;
+    margin-bottom: 12px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+/* Styling for extra small screens 767px and below */
+@media screen and (max-width: 767px) {
+
+    /* Hides the normal navbar on XS screens. */
+    .navbar {
+        display:none;
+    }
+
+    /* Styling for the XS header containing logo */
+    .header-xs {
+        background-color: #34495e;
+        width: 100%;
+        height: 86px;
+        padding: 10px 16px 10px 16px;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;  
+        height: 60px;
+        width: auto;
+    }
+
+    /* Styling for the XS navbar */
+    .nav-xs {
+        background-color: #34495e;
+        width: 100%;
+        height: 50px;
+        padding: 0px 16px 12px 16px;
+        /* box-shadow: 0 5px 10px #f1c40f29; */
+    }
+
+    /* Centres the navbar menu items under the logo */
+    .navbar-expand-sm {
+        justify-content: center;
+    }
+
+    /* Spaces out the navbar link items */
+    .navbar-nav .nav-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Allows for extra small nav bar to work on all screen sizes between 0-767px wide */
+@media (min-width: 0px) {
+    .navbar-expand-sm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    }
+}    
+
+/* Hides extra small nav bar on screens 786px wide or more */
+@media screen and (min-width: 768px) {
+    
+    .header-xs {
+        display:none;
+    }
+
+    .nav-xs {
+        display:none;
+    }
 }

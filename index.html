@@ -8,35 +8,65 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-between">
-        <a class="navbar-brand" href="#"><img class="logo" src="Assets\Images\logo.png"></a>
+    <!-- Logo for extra small screens 767 pixels or less -->
+    <header class="header-xs">
+        <img class="logo" href="#" src="Assets\Images\logo.png"></a>
+    </header>
 
-        <div class="navbar-nav justify-content-end">
-            <a class="nav-item nav-link" href="index.html">About</a>
-            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
+    <!-- Navbar for extra small screens 767 pixels or less -->
+    <nav class="nav-xs">
+        <ul class="navbar-nav navbar-expand-sm">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Contact</a>
+            </li>
+        </ul>
     </nav>
 
-    <!-- Main Body goes in Container -->
+    <!-- Logo & Navbar for small-large screens 768px or more -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="#"><img class="logo" src="Assets\Images\logo.png"></a>
+
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Body - About -->
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <h4 class="card-title">About Me</h4>
                     <img src="Assets\Images\about-me-image.png" class="card-img-top" alt="Chris Roschi portrait">
                     <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem non reprehenderit reiciendis vitae? Perspiciatis quos quibusdam sint quasi odio veniam recusandae laboriosam. Mollitia veniam laudantium sequi quasi qui cumque corporis eaque! Ipsam facere minus reiciendis delectus, suscipit quis magni molestias unde obcaecati qui nisi atque officia repudiandae beatae porro consequatur.</p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem non
+                            reprehenderit reiciendis vitae? Perspiciatis quos quibusdam sint quasi odio veniam
+                            recusandae laboriosam.</p>
+                        <p class="card-text">Mollitia veniam laudantium sequi quasi qui cumque corporis eaque! Ipsam
+                            facere minus reiciendis delectus, suscipit quis magni molestias unde obcaecati qui nisi
+                            atque officia repudiandae beatae porro consequatur.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
