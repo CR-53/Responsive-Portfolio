@@ -1,25 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Contact Chris Roschi</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-between">
+    <!-- Logo for extra small screens 767 pixels or less -->
+    <header class="header-xs">
+        <img class="logo" href="#" src="Assets\Images\logo.png"></a>
+    </header>
+
+    <!-- Navbar for extra small screens 767 pixels or less -->
+    <nav class="nav-xs">
+        <ul class="navbar-nav navbar-expand-sm">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Logo & Navbar for small-large screens 768px or more -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
         <a class="navbar-brand" href="#"><img class="logo" src="Assets\Images\logo.png"></a>
 
-        <div class="navbar-nav justify-content-end">
-            <a class="nav-item nav-link" href="index.html">About</a>
-            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
-        
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
-    
+
+    <!-- Page Content - Contact Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="contact">
+                    <h2>Contact</h2>
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> Commented this line out instead of deleting as I might choose to add it back in later  -->
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -4,22 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris Roschi's Porfolio</title>    
+    <title>Chris Roschi's Porfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-between">
-            <a class="navbar-brand" href="#"><img class="logo" src="Assets\Images\logo.png"></a>
+    <!-- Logo for extra small screens 767 pixels or less -->
+    <header class="header-xs">
+        <img class="logo" href="#" src="Assets\Images\logo.png"></a>
+    </header>
 
-                <div class="navbar-nav justify-content-end">
-                    <a class="nav-item nav-link" href="index.html">About</a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+    <!-- Navbar for extra small screens 767 pixels or less -->
+    <nav class="nav-xs">
+        <ul class="navbar-nav navbar-expand-sm">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Logo & Navbar for small-large screens 768px or more -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="#"><img class="logo" src="Assets\Images\logo.png"></a>
+
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content - Portfolio -->
+    <div class="container">
+        <div class="row portfolio-row">
+            <div class="col-md-6">
+                <div class="portfolio">
+                    <h2>Portfolio</h2>
+                    <img class="portfolio-image-lead" src="Assets\Images\about-me-image.png" alt="Chris Roschi">
                 </div>
-        </nav>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio">
+                    <img class="portfolio-img" src="Assets\Images\about-me-image.png" alt="Chris Roschi">
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
