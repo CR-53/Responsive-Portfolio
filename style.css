@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 body {
-    background-color: #e6e6e6;
+    background-color: #f8f9fa;
+    /* background-image: linear-gradient( #C6C6C6, #989898); */
 }
 
 p {
@@ -19,7 +21,7 @@ h2 {
     background-color:#34495e !important; /* Changes the background colour of the navbar to match the logo colour. Use of important override bootstrap CSS*/
     box-shadow: 0 5px 10px #f1c40f29;
     height: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .nav-link {
@@ -28,7 +30,7 @@ h2 {
 
 .navbar-nav a {
     color: #f1c40f !important; /* Changes the colour of the nav links to match the logo colour. Use of important override bootstrap CSS*/
-    font-size: 22px;
+    font-size: 24px;
     margin-right: 24px; /* Indenting the Navbar Links on the right side of the page. Indentation matches the left side of the logo */
 }
 
@@ -41,13 +43,12 @@ a:hover {
     margin-left: 24px; /* Indenting the logo out from the left side of the page. Indentation matches the right side of the Navbar links */
     height: 60px; 
 }
-
+ 
 .card {
     width: 100%;
     padding: 25px;
-    /* border-style:solid; 
-    border-width: 2px;
-    border-color: black; */
+    background-color: #efefefe6;
+    margin-bottom: 250px;
 }
 
 /* About Me heading styling to match other h2 elements */
@@ -68,8 +69,19 @@ a:hover {
 
 /* Contact form styling */
 .contact {
-    background-color: white;
+    background-color: #efefefe6;
     padding: 25px;
+    background-clip: border-box; /* Added border styling to match About Me card border */
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 250px;
+}
+
+/* Styles the inside of the contact form when clicked */
+.form-control:focus {
+    border-color: #f1c40f;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #f1c40f;
 }
 
 /* Font size for the contact form labels */
@@ -93,18 +105,28 @@ label {
 }
 
  .portfolio-row { 
-    background: white;
+    background-color: #efefefe6;
+    background-clip: border-box; /* Added border styling to match About Me card border */
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 250px;
 }
 
 .portfolio {
-    background-color: white;
+    /* background-color: #fdfdfdd6; */
     padding: 25px;
 }
 
-.portfolio-img-lead {
-    margin: 0px auto !important;
-}
-
+#sticky-footer {
+    margin-top: 80px; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495ed6 !important; 
+    color:white;
+  }
+  
 /* Styling for extra small screens 767px and below */
 @media screen and (max-width: 767px) {
 
