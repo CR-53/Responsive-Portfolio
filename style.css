@@ -30,7 +30,7 @@ h2 {
 
 .navbar-nav a {
     color: #f1c40f !important; /* Changes the colour of the nav links to match the logo colour. Use of important override bootstrap CSS*/
-    font-size: 24px;
+    font-size: 22px;
     margin-right: 24px; /* Indenting the Navbar Links on the right side of the page. Indentation matches the left side of the logo */
 }
 
