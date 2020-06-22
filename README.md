@@ -39,4 +39,4 @@ As a bonus, I added a sticky footer at the bottom of the page. I used the same c
 
 ## License & copyright
 
-© Chris Roschi, University of Adelaide Coding Bootcamp
+© Chris R, University of Adelaide Coding Bootcamp
