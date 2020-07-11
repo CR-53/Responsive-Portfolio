@@ -36,6 +36,7 @@ h2 {
 
 a:hover {
     color: darkorange !important; /* Changes the colour of links when highlighted */
+    text-decoration: none;
 }
 
 
@@ -44,7 +45,7 @@ a:hover {
     height: 60px; 
 }
  
-.card {
+.card-default {
     width: 100%;
     padding: 25px;
     background-color: #efefefe6;
@@ -52,7 +53,7 @@ a:hover {
 }
 
 /* About Me heading styling to match other h2 elements */
-.card-title {
+.card-title-default {
     margin-bottom: 20px;
 }
 
@@ -74,7 +75,43 @@ a:hover {
     background-clip: border-box; /* Added border styling to match About Me card border */
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    margin-bottom: 250px;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    border-color: #34495e;
+}
+
+.contact-card-header {
+    text-align: center;
+    padding: 8px;
+    background-color: #34495e;
+}
+
+.contact-card-body {
+    background-color: #34495e;
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    font-size: 30px;
+    color: #f1c40f;
+}
+
+.bg-primary {
+    background-color: #34495e !important; 
+}
+
+.contact-card-text {
+    font-size: 16px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+.contact-card-text:hover {
+    color: darkorange;
+    cursor: pointer !important;
+    text-decoration: none !important;
 }
 
 /* Styles the inside of the contact form when clicked */
@@ -124,6 +161,23 @@ label {
     border-color: #34495e;
     border-radius: 4px;
 }
+
+.portfolio-img:hover {
+    max-width: 90%;
+    border: solid;
+    border-width: 4px;
+    border-color: darkorange;
+    border-radius: 4px;
+}
+  
+  .img-hover-zoom {
+    transition: transform .5s ease;
+  }
+  
+  .img-hover-zoom:hover {
+    transition: transform .5s ease;
+    transform: scale(1.05);
+  }
 
 #sticky-footer {
     margin-top: 80px; 
