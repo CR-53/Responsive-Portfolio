@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <!-- Bootstrap v4.0.0 Link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 
 <body>
@@ -54,46 +55,148 @@
 
     <!-- Page Content - Portfolio -->
     <div class="container">
+ 
         <div class="row portfolio-row">
-            <div class="col-md-6">
-                <div class="portfolio">
-                    <h2>Portfolio</h2>
-                    <a href="https://github.com/CR-53/Code-Quiz" target="_blank">
-                        <img class="img-fluid portfolio-img img-hover-zoom" src="Assets\Images\Coding Quiz.png" alt="Coding Quiz">
-                    </a>
-                </div>
+            <div class="col-md-12 portfolio-title">
+                <h2>Portfolio</h2>
             </div>
+
             <div class="col-md-6">
-                <div class="portfolio">
-                    <a href="https://github.com/thomasmaglaris/epl-fixture-guide" target="_blank">
+                <div class="card portfolio">
+                    <a href="https://github.com/thomasmaglaris/epl-fixture-guide" target="_blank" class="portfolio-img-link">
                         <!-- Added dummy links to pictures which can be replaced with real links later-->
-                        <img class="img-fluid portfolio-img portfolio-img2 img-hover-zoom" src="Assets\Images\EPL Fixture Guide.png" alt="EPL Fixture Guide">
+                        <img class="img-fluid portfolio-img portfolio-img img-hover-zoom card-img-top" src="Assets\Images\EPL Fixture Guide.png" alt="EPL Fixture Guide">
                     </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://thomasmaglaris.github.io/epl-fixture-guide/" class="btn btn-dark" target="_blank">Deployed App</a>
+                        <a href="https://github.com/thomasmaglaris/epl-fixture-guide" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
                 </div>
             </div>
+
             <div class="col-md-6">
-                <div class="portfolio">
-                    <a href="https://github.com/CR-53/Weather-Dashboard" target="_blank">
-                        <img class="img-fluid portfolio-img img-hover-zoom" src="Assets\Images\Weather Dashboard.png" alt="Weather Dashboard">
+                <div class="card portfolio">
+                    <a href="https://github.com/CR-53/Employee-Tracker" target="_blank" class="portfolio-img-link">
+                        <img class="img-fluid portfolio-img img-hover-zoom card-img-top" src="Assets\Images\Employee Tracker.png" alt="Employee Tracker">
                     </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://vimeo.com/446678602" class="btn btn-dark" target="_blank">Video Demo</a>
+                        <a href="https://github.com/CR-53/Employee-Tracker" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
                 </div>
             </div>
+
             <div class="col-md-6">
-                <div class="portfolio">
-                    <a href="https://github.com/CR-53/Work-Day-Schedular" target="_blank">
-                        <img class="img-fluid portfolio-img img-hover-zoom" href="www.google.com" src="Assets\Images\Workday Scheduler.png" alt="Workday Scheduler">
+                <div class="card portfolio">
+                    <a href="https://github.com/CR-53/Weather-Dashboard" target="_blank" class="portfolio-img-link">
+                        <img class="img-fluid portfolio-img img-hover-zoom card-img-top" src="Assets\Images\Weather Dashboard.png" alt="Weather Dashboard">
                     </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://cr-53.github.io/Weather-Dashboard/" class="btn btn-dark" target="_blank">Deployed App</a>
+                        <a href="https://github.com/CR-53/Weather-Dashboard" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
                 </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card portfolio">
+                    <a href="https://github.com/benorule/bin-out" target="_blank" class="portfolio-img-link">
+                        <img class="img-fluid portfolio-img img-hover-zoom card-img-top" src="Assets\Images\Bin Out.png" alt="Workday Scheduler">
+                    </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://bin-out.herokuapp.com/" class="btn btn-dark" target="_blank">Live Demo</a>
+                        <a href="https://github.com/benorule/bin-out" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card portfolio">
+                    <a href="https://github.com/CR-53/Work-Day-Schedular" target="_blank" class="portfolio-img-link">
+                        <img class="img-fluid portfolio-img img-hover-zoom card-img-top" src="Assets\Images\Workday Scheduler.png" alt="Workday Scheduler">
+                    </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://cr-53.github.io/Work-Day-Schedular/Develop/index.html" class="btn btn-dark" target="_blank">Deployed App</a>
+                        <a href="https://github.com/CR-53/Work-Day-Schedular" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card portfolio">
+                    <a href="https://github.com/CR-53/Code-Quiz" target="_blank"  class="portfolio-img-link">
+                        <img class="img-fluid portfolio-img img-hover-zoom card-img-top" src="Assets\Images\Coding Quiz.png" alt="Coding Quiz">
+                    </a>
+                    <div class="card-body card-body-buttons">
+                        <a href="https://cr-53.github.io/Code-Quiz/Develop/index.html" class="btn btn-dark" target="_blank">Deployed App</a>
+                        <a href="https://github.com/CR-53/Code-Quiz" class="btn btn-dark" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+
+        <div class="row">
+            <div class="col-md-3">
+                <a href="mailto:chrisroschi53@gmail.com" target="_blank">
+                    <div class="card text-white bg-primary mb-3 contact-card" style="max-width: 18rem;">
+                        <div class="card-header contact-card-header"><i class="fa fa-envelope contact-icons"></i></div>
+                        <div class="card-body contact-card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text contact-card-text">chrisroschi53@gmail.com</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/in/christian-roschi/" target="_blank">
+                    <div class="card text-white bg-primary mb-3 contact-card" style="max-width: 18rem;">
+                        <div class="card-header contact-card-header"><i class="fa fa-linkedin-square contact-icons"></i></div>
+                        <div class="card-body contact-card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text contact-card-text">View LinkedIn</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="Assets\Documents\Chris Roschi - Resume 2020.pdf" target="_blank">
+                    <div class="card text-white bg-primary mb-3 contact-card" style="max-width: 18rem;">
+                        <div class="card-header contact-card-header"><i class="fa fa-file-pdf-o contact-icons"></i>
+                        </div>
+                        <div class="card-body contact-card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text contact-card-text">View Resume</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://github.com/CR-53" target="_blank">
+                    <div class="card text-white bg-primary mb-3 contact-card" style="max-width: 18rem;">
+                        <div class="card-header contact-card-header"><i class="fa fa-github contact-icons"></i></div>
+                        <div class="card-body contact-card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text contact-card-text">View GitHub Portfolio</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+                <small>Copyright &copy; Chris Roschi 2020</small>
+            </div>
+        </footer>
     </div>
-
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-            <small>Copyright &copy; Chris Roschi 2020</small>
-        </div>
-    </footer>
-
 </body>
 
 </html>
